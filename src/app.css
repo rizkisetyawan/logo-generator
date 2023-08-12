@@ -51,6 +51,7 @@
 }
 
 .body-controller-title {
+  width: 100%;
   position: relative;
 }
 
@@ -65,8 +66,8 @@
 }
 
 .body-controller-title input {
-  width: 100%;
-  outline: none;
+  width: 100%; 
+  outline: none; 
   padding: 8px 12px;
   font-size: 16px;
   color: rgb(100, 116, 139);
@@ -93,7 +94,7 @@ label[for="vol"] {
   margin-bottom: 32px;
 }
 
-.body-controller-size-range {
+.body-controller-size input {
   flex: 1;
 }
 
@@ -105,7 +106,7 @@ label[for="vol"] {
   margin-bottom: 32px;
 }
 
-.body-controller-color {
+.body-controller-colors div {
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -116,7 +117,7 @@ label[for="vol"] {
   outline: 4px solid olivedrab
 }
 
-.body-controller-btn {
+.body-controller button {
   color: #fff;
   background-color: rgb(100, 116, 139);
   font-size: 16px;
@@ -129,7 +130,7 @@ label[for="vol"] {
   cursor: pointer;
 }
 
-.body-controller-btn:hover {
+.body-controller button:hover {
   background-color: rgb(148 163 184 / 1);
 }
 

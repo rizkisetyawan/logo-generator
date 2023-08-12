@@ -106,7 +106,6 @@ function App() {
               max="72"
               value={sizeLogo}
               onChange={handleSizeLogo}
-              className="body-controller-size-range"
             />
             <label htmlFor="vol">{sizeLogo}px</label>
           </div>
@@ -114,19 +113,16 @@ function App() {
             {logoColors.map((color) => (
               <div
                 key={color}
-                className={`body-controller-color ${
+                className={
                   color === selectedColor && "body-controller-color-active"
-                }`}
+                }
                 style={{ backgroundColor: color }}
                 onClick={handleSelectColor(color)}
               />
             ))}
           </div>
-          <button
-            className="body-controller-btn"
-            onClick={handleConvertToCanvas}
-          >
-            <img src={iconDownload} className="logo react" alt="React logo" />
+          <button onClick={handleConvertToCanvas}>
+            <img src={iconDownload} alt="icon-download" />
             Save
           </button>
         </div>
